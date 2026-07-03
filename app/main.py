@@ -3,6 +3,8 @@ import logging
 
 app = FastAPI(title="Employee Management API")
 
+os.makedirs('/var/log/employee-api', exist_ok=True)
+
 logging.basicConfig(
     filename='/var/log/employee-api/app.log',
     level=logging.INFO,
