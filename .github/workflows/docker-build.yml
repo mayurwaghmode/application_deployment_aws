@@ -45,4 +45,4 @@ jobs:
           
       - name: Push Commit SHA Image    
         run: |
-          docker push \ ${{ steps.login-ecr.outputs.registry }}/$ECR_REPOSITORY:${{ github.sha }}
+          docker push ${{ steps.login-ecr.outputs.registry }}/$ECR_REPOSITORY:${{ github.sha }}
