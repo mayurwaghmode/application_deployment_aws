@@ -7,5 +7,5 @@ def home():
   return { "message": "Welcome to Employee Management API" }
   
 @app.get("/health")
-  def health():
-    return { "status": "healthy" }
+def health():
+  return { "status": "healthy" }
